@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+   
+    div{
+        margin-top: 10em;
+        width: 60em;
+        height: 70em;
+        border: 3px solid black;
+    }
+}
