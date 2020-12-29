@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
-import Routes from "./Routes";
 import GlobalStyle from "./styles/GlobalStyle";
-import Theme from "./styles/Theme";
+import Routes from "./Routes";
+import theme from "./styles/Theme";
 
 ReactDOM.render(
   <>
-    <ThemeProvider theme={Theme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Routes />
     </ThemeProvider>

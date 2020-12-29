@@ -1,0 +1,375 @@
+{
+    "total": [
+        {
+            "rank" : 1,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "밤하늘에 별을",
+            "album" : "밤하늘에 별을",
+            "artist" : "경서",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },
+        {
+            "rank" : 2,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Dynamite",
+            "album" : "Dynamite(DayTime Version)",
+            "artist" : "방탄소년단",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 3,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "VVS(Feat.JSUTHIS)",
+            "album" : "쇼미더머니9",
+            "artist" : "미란이",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 4,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "잠이 오질 않네요",
+            "album" : "잠이 오질 않네요",
+            "artist" : "장범준",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 5,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Life Goes On",
+            "album" : "BE",
+            "artist" : "방탄소년단",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 6,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "힘든건 사랑이 아니다",
+            "album" : "힘든건 사랑이 아니다",
+            "artist" : "임창정",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 7,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Lovesick Girls",
+            "album" : "THE ALBUM",
+            "artist" : "블랙핑크",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 8,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "취기를 빌려(취향저격 그녀 X 산들)",
+            "album" : "취기를 빌려(취향저격 그녀 X 산들)",
+            "artist" : "산들",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 9,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "CREDIT(Feat. 염따, 기리보이, Zion.T)",
+            "album" : "쇼미더머니 9 Final",
+            "artist" : "릴보이",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 10,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "내 마음이 움찔했던 순간 (취향저격 그녀 X 규현)",
+            "album" : "내 마음이 움찔했던 순간 (취향저격 그녀 X 규현)",
+            "artist" : "규현",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 11,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "내일이 오면",
+            "album" : "쇼미더머니 9 Episode 3",
+            "artist" : "릴보이",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },
+        {
+            "rank" : 12,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "모든날, 모든 순간",
+            "album" : "키스 먼저 할까요?",
+            "artist" : "폴킴",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 13,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Love poem",
+            "album" : "Love poem",
+            "artist" : "IU",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 14,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "어떻게 이별까지 사랑하겠어, 널 사랑하는거지",
+            "album" : "항해",
+            "artist" : "AKMU (악동뮤지션)",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 15,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "ON AIR",
+            "album" : "쇼미더머니 9 파이널",
+            "artist" : "릴보이",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 16,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Savage Love",
+            "album" : "Savage Love",
+            "artist" : "Hawsh 685",
+            "genre" : "발라드",
+            "countury" : "해외"
+        },{
+            "rank" : 17,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "늦은 밤 너의 집 앞 골목길에서",
+            "album" : "늦은 밤 너의 집 앞 골목길에서",
+            "artist" : "노을",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 18,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Dolphin",
+            "album" : "NONSTOP",
+            "artist" : "오마이걸",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 19,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "딩가딩가",
+            "album" : "딩가딩가",
+            "artist" : "마마무",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 20,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Achoo",
+            "album" : "미란이",
+            "artist" : "쇼미더머니 9",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 21,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "에잇",
+            "album" : "에잇",
+            "artist" : "아이유",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 22,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "나랑 같이 걸을래 (바른연애 길잡이 X 전재)",
+            "album" : "나랑 같이 걸을래 (바른연애 길잡이 X 전재)",
+            "artist" : "적재",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 23,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "When We Disco",
+            "album" : "When We Disco",
+            "artist" : "박진영",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 24,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "뿌리",
+            "album" : "쇼미더머니9",
+            "artist" : "Khundi Panda",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 25,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "What Do I Call You",
+            "album" : "What Do I Call You",
+            "artist" : "태연",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 26,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "I CAN'T STOP ME",
+            "album" : "Eyes wide open",
+            "artist" : "TWICE",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 27,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Panorama",
+            "album" : "One-reeler / Act IV",
+            "artist" : "IZ*ONE",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 28,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "잘할게",
+            "album" : "The Project",
+            "artist" : "이승기",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 29,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "흔들리는 꽃들 속에서 네 샴푸향이 느껴진거야",
+            "album" : "멜로가 체질",
+            "artist" : "장범준",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 30,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "여백의 미",
+            "album" : "쇼미더머니9 Final",
+            "artist" : "머쉬베놈",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 31,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "작은 것들을 위한 시",
+            "album" : "MAP OF THE SOUL",
+            "artist" : "방탄소년단",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 32,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "오래된 노래",
+            "album" : "오래된 노래",
+            "artist" : "스탠딩 에그",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 33,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "이제 나만 믿어요",
+            "album" : "혼술하고 싶은 밤",
+            "artist" : "벤",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 34,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Blueming",
+            "album" : "Love poem",
+            "artist" : "IU",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 35,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "밤편지",
+            "album" : "밤편지",
+            "artist" : "IU",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 36,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "How You Like That",
+            "album" : "How You Like That",
+            "artist" : "BLACKPINK",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 37,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "소확행",
+            "album" : "힘든 건 사랑이 아니다.",
+            "artist" : "임창정",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 38,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "DON'T TOUCH ME",
+            "album" : "DON'T TOUCH ME",
+            "artist" : "환불원정대",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 39,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "너를 만나",
+            "album" : "너를 만나",
+            "artist" : "폴킴",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 40,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "악역",
+            "album" : "쇼미더머니 9 Final",
+            "artist" : "스윙스",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 41,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "살짝 설렜어",
+            "album" : "NONSTOP",
+            "artist" : "오마이걸",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 42,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Snowman",
+            "album" : "Everyday is Christmas",
+            "artist" : "Sia",
+            "genre" : "발라드",
+            "countury" : "해외"
+        },{
+            "rank" : 43,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "HERO",
+            "album" : "HERO",
+            "artist" : "임영웅",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 44,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "마리아",
+            "album" : "Maria",
+            "artist" : "화사",
+            "genre" : "발라드",
+            "countury" : "국내"
+        },{
+            "rank" : 45,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "Memories",
+            "album" : "Memories",
+            "artist" : "Maroon5",
+            "genre" : "발라드",
+            "countury" : "해외"
+        },{
+            "rank" : 46,
+            "imgUrl" : "./Images/cutedog.png",
+            "title" : "사계",
+            "album" : "사계",
+            "artist" : "태연",
+            "genre" : "발라드",
+            "countury" : "국내"
+        }
+    ]
+}
