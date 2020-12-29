@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import AlbumDetail from "./Conponents/AlbumDetail/AlbumDetail";
-import Footer from "./Conponents/Footer/Footer";
-import Nav from "./Conponents/Nav/Nav";
-import PlayBar from "./Conponents/PlayBar/PlayBar";
+import AlbumDetail from "./Components/AlbumDetail/AlbumDetail";
+import Footer from "./Components/Footer/Footer";
+import Nav from "./Components/Nav/Nav";
+import PlayBar from "./Components/PlayBar/PlayBar";
 import Chart from "./Pages/Chart/Chart";
 import SignIn from "./Pages/SignIn/SignIn";
 import SignUp from "./Pages/SignUp/SignUp";
 import Main from "./Pages/Main/Main";
 import Storage from "./Pages/Storage/Storage";
 import GenreDetail from "./Pages/GenreDetail/GenreDetail";
-import SituationDetail from "./Conponents/SituationDetail/SituationDetail";
+import SituationDetail from "./Components/SituationDetail/SituationDetail";
 class Routes extends Component {
   render() {
     return (
