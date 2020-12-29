@@ -12,6 +12,7 @@ import Main from "./Pages/Main/Main";
 import Storage from "./Pages/Storage/Storage";
 import GenreDetail from "./Pages/GenreDetail/GenreDetail";
 import SituationDetail from "./Components/SituationDetail/SituationDetail";
+
 class Routes extends Component {
   render() {
     return (

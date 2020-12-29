@@ -1,0 +1,127 @@
+{
+  "AlbumBoxData": [
+    {
+      "id": 1,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/642/643/05/04/405643642_5feac192_s.jpg?1609220500533/dims/resize/500x500/quality/90",
+      "title": "요즘",
+      "artist": "양다일"
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/082/637/05/04/405637082_5fe97726_s.jpg?1609135911388/dims/resize/500x500/quality/90",
+      "title": "심장에 박힌 말",
+      "artist": "허주"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/654/643/05/04/405643654_5feac1d3_s.jpg?1609220564699/dims/resize/500x500/quality/90",
+      "title": "흐릿해져",
+      "artist": "김찬미 (charm)"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/357/643/05/04/405643357_5feaae72_s.jpg?1609215605937/dims/resize/500x500/quality/90",
+      "title": "새벽 눈",
+      "artist": "이스트코너"
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/416/643/05/04/405643416_5feabd2b_s.jpg?1609219373036/dims/resize/500x500/quality/90",
+      "title": "그냥 다 아는 이야기",
+      "artist": "해브 (have)"
+    },
+    {
+      "id": 6,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/642/643/05/04/405643642_5feac192_s.jpg?1609220500533/dims/resize/500x500/quality/90",
+      "title": "요즘",
+      "artist": "양다일"
+    },
+    {
+      "id": 7,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/082/637/05/04/405637082_5fe97726_s.jpg?1609135911388/dims/resize/500x500/quality/90",
+      "title": "심장에 박힌 말",
+      "artist": "허주"
+    },
+    {
+      "id": 8,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/654/643/05/04/405643654_5feac1d3_s.jpg?1609220564699/dims/resize/500x500/quality/90",
+      "title": "흐릿해져",
+      "artist": "김찬미 (charm)"
+    },
+    {
+      "id": 9,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/357/643/05/04/405643357_5feaae72_s.jpg?1609215605937/dims/resize/500x500/quality/90",
+      "title": "새벽 눈",
+      "artist": "이스트코너"
+    },
+    {
+      "id": 10,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/album/416/643/05/04/405643416_5feabd2b_s.jpg?1609219373036/dims/resize/500x500/quality/90",
+      "title": "그냥 다 아는 이야기",
+      "artist": "해브 (have)"
+    }
+  ],
+
+  "ArtistBoxData": [
+    {
+      "id": 1,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/artist/826/000/00/04/400000826_5f8d257e_s.jpg?1603085697250/dims/resize/x500/quality/90",
+      "title": "임창정",
+      "listener": "주간 청취자 46.8만명"
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://cdn.music-flo.com/image/artist/875/043/03/04/403043875_5eb4b748.jpg?1588901704962/dims/resize/x500/quality/90",
+      "title": "아이유 (IU)",
+      "listener": "주간 청취자 43.2만명"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/artist/569/170/03/04/403170569_5f96820b_s.jpg?1603699213879/dims/resize/x500/quality/90",
+      "title": "폴킴",
+      "listener": "주간 청취자 29.4만명"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/artist/831/020/00/04/400020831_5fd3301b_s.jpg?1607675935384/dims/resize/x500/quality/90",
+      "title": "이승기",
+      "listener": "주간 청취자 21.9만명"
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://cdn.music-flo.com/image/artist/918/011/00/04/400011918_5c9db27e.jpg?1553838719820/dims/resize/500/quality/90",
+      "title": "노을",
+      "listener": "주간 청취자 21.2만명"
+    },
+    {
+      "id": 6,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/artist/826/000/00/04/400000826_5f8d257e_s.jpg?1603085697250/dims/resize/x500/quality/90",
+      "title": "임창정",
+      "listener": "주간 청취자 46.8만명"
+    },
+    {
+      "id": 7,
+      "imgUrl": "https://cdn.music-flo.com/image/artist/875/043/03/04/403043875_5eb4b748.jpg?1588901704962/dims/resize/x500/quality/90",
+      "title": "아이유 (IU)",
+      "listener": "주간 청취자 43.2만명"
+    },
+    {
+      "id": 8,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/artist/569/170/03/04/403170569_5f96820b_s.jpg?1603699213879/dims/resize/x500/quality/90",
+      "title": "폴킴",
+      "listener": "주간 청취자 29.4만명"
+    },
+    {
+      "id": 9,
+      "imgUrl": "https://cdn.music-flo.com/image/v2/artist/831/020/00/04/400020831_5fd3301b_s.jpg?1607675935384/dims/resize/x500/quality/90",
+      "title": "이승기",
+      "listener": "주간 청취자 21.9만명"
+    },
+    {
+      "id": 10,
+      "imgUrl": "https://cdn.music-flo.com/image/artist/918/011/00/04/400011918_5c9db27e.jpg?1553838719820/dims/resize/500/quality/90",
+      "title": "노을",
+      "listener": "주간 청취자 21.2만명"
+    }
+  ]
+}

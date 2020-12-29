@@ -44,7 +44,7 @@ const NavContainer = styled.div`
   width: 100%;
   height: 5em;
   background-color: white;
-  z-index: 2;
+  z-index: 1;
 `;
 
 const NavLogoSection = styled.div`
