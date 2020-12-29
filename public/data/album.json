@@ -1,0 +1,270 @@
+{
+    "album": [
+        {
+        "album_cover": "/images/111111.jpg",
+        "album_genre": "발라드",
+        "album_id": 1,
+        "album_name": "너랑나랑",
+        "album_popularity": 2001200,
+        "album_type": "싱글",
+        "artist_name": "아이유",
+        "artist_type": "솔로",
+        "country": "Korea",
+        "release_date": "2009-12-20",
+        "track_info": [
+            {
+                "id": 1,
+                "name": "장기하가 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 2,
+                "name": "아이유가 배가고파",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 3,
+                "name": "야식먹을 시간이다",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 4,
+                "name": "늴리리야",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 5,
+                "name": "배고프다니까요?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 6,
+                "name": "웃어? 웃음이 나와?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 7,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 8,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            }
+        ]
+    }, {
+        "album_cover": "https://unsplash.com/photos/QWGY_cDdLsI",
+        "album_genre": "발라드",
+        "album_id": 2,
+        "album_name": "너랑나랑",
+        "album_popularity": 2001200,
+        "album_type": "싱글",
+        "artist_name": "아이유",
+        "artist_type": "솔로",
+        "country": "Korea",
+        "release_date": "2009-12-20",
+        "track_info": [
+            {
+                "id": 1,
+                "name": "장기하가 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 2,
+                "name": "아이유가 배가고파",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 3,
+                "name": "야식먹을 시간이다",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 4,
+                "name": "늴리리야",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 5,
+                "name": "배고프다니까요?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 6,
+                "name": "웃어? 웃음이 나와?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 7,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 8,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            }
+        ]
+    }, {
+        "album_cover": "https://unsplash.com/photos/QWGY_cDdLsI",
+        "album_genre": "발라드",
+        "album_id": 3,
+        "album_name": "너랑나랑",
+        "album_popularity": 2001200,
+        "album_type": "싱글",
+        "artist_name": "아이유",
+        "artist_type": "솔로",
+        "country": "Korea",
+        "release_date": "2009-12-20",
+        "track_info": [
+            {
+                "id": 1,
+                "name": "장기하가 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 2,
+                "name": "아이유가 배가고파",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 3,
+                "name": "야식먹을 시간이다",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 4,
+                "name": "늴리리야",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 5,
+                "name": "배고프다니까요?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 6,
+                "name": "웃어? 웃음이 나와?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 7,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 8,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            }
+        ]
+    }, {
+        "album_cover": "https://unsplash.com/photos/QWGY_cDdLsI",
+        "album_genre": "발라드",
+        "album_id": 4,
+        "album_name": "너랑나랑",
+        "album_popularity": 2001200,
+        "album_type": "싱글",
+        "artist_name": "아이유",
+        "artist_type": "솔로",
+        "country": "Korea",
+        "release_date": "2009-12-20",
+        "track_info": [
+            {
+                "id": 1,
+                "name": "장기하가 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 2,
+                "name": "아이유가 배가고파",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 3,
+                "name": "야식먹을 시간이다",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 4,
+                "name": "늴리리야",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 5,
+                "name": "배고프다니까요?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 6,
+                "name": "웃어? 웃음이 나와?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 7,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 8,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            }
+        ]
+    }, {
+        "album_cover": "https://unsplash.com/photos/QWGY_cDdLsI",
+        "album_genre": "발라드",
+        "album_id": 5,
+        "album_name": "너랑나랑",
+        "album_popularity": 2001200,
+        "album_type": "싱글",
+        "artist_name": "아이유",
+        "artist_type": "솔로",
+        "country": "Korea",
+        "release_date": "2009-12-20",
+        "track_info": [
+            {
+                "id": 1,
+                "name": "장기하가 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 2,
+                "name": "아이유가 배가고파",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 3,
+                "name": "야식먹을 시간이다",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 4,
+                "name": "늴리리야",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 5,
+                "name": "배고프다니까요?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 6,
+                "name": "웃어? 웃음이 나와?!",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 7,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            },
+            {
+                "id": 8,
+                "name": "그리워 그리워",
+                "streaming_url": "https://developer.apple.com/streaming/examples/"
+            }
+        ]
+    }
+    ]
+}
