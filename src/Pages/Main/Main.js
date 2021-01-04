@@ -7,6 +7,7 @@ const Main = () => {
       <div>hello box</div>
     </div>
   );
+
 };
 
 export default Main;
