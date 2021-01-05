@@ -1,9 +1,16 @@
-import styled, { css } from "styled-components";
+import { css } from "styled-components";
 
 const theme = {
-  mainColor: "black",
-  dangerColor: "black",
-  successColor: "black",
+  fontColor: "black",
+  mainColorBlue: "#3f3fff",
+  greyText: "#a5a5a5",
 };
+
+export const flexcenter = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 
 export default theme;
