@@ -1,7 +1,8 @@
 import React from "react";
 
 const SituationDetail = () => {
-  return <div>hi</div>;
+  return <div></div>;
+
 };
 
 export default SituationDetail;

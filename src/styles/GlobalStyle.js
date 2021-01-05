@@ -1,8 +1,8 @@
-import { createGlobalStyle, ThemeProvider } from "styled-components";
-import reset from "styled-reset";
+import { createGlobalStyle } from "styled-components";
+import { reset } from "styled-reset";
 
 const GlobalStyle = createGlobalStyle`
-${reset};
+  ${reset};
   html,
   body,
   div,
@@ -132,7 +132,7 @@ ${reset};
   }
   a {
     text-decoration: none;
-  }
+  } 
 `;
 
 export default GlobalStyle;
