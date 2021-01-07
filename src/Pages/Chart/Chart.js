@@ -9,7 +9,6 @@ import axios from "axios";
 import styled from "styled-components";
 
 const Chart = () => {
-<<<<<<< HEAD
   // 데이터받아오기
   const [totalData, setTotalData] = useState([]);
 
@@ -122,9 +121,6 @@ const Chart = () => {
       <ChartGenre />
     </>
   );
-=======
-  return <div></div>;
->>>>>>> 5802a56... Add: 회원가입, 로그인 기능 구현 완료. 리팩토링 진행 중
 };
 
 export default Chart;

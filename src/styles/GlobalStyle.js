@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { reset } from "styled-reset";
+
 const GlobalStyle = createGlobalStyle`
   ${reset};
   html,
@@ -119,7 +120,7 @@ const GlobalStyle = createGlobalStyle`
   blockquote:after,
   q:before,
   q:after {
-    content: “”;
+    content: "";
     content: none;
   }
   table {
@@ -133,4 +134,5 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   } 
 `;
+
 export default GlobalStyle;

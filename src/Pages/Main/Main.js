@@ -1,15 +1,33 @@
 import React from "react";
+import MainSectionComponent from "./Components/MainSectionComponent/MainSectionComponent";
+import DoubleSectionComponent from "./Components/DoubleSectionComponent/DoubleSectionComponent";
+import SingleSectionComponent from "./Components/SingleSectionComponent/SingleSectionComponent";
+import styled from "styled-components";
+import { flexcenter } from "../../styles/Theme";
 
 const Main = () => {
-<<<<<<< HEAD
-  return <div></div>;
-=======
   return (
-    <div className="main">
-      <div>hello box</div>
-    </div>
+    <MainPage>
+      <MainWrapper>
+        <MainSectionComponent />
+        <DoubleSectionComponent />
+        <SingleSectionComponent mdName="/data/singleMD1.json" />
+        <SingleSectionComponent mdName="/data/singleMD2.json" />
+        <SingleSectionComponent mdName="/data/singleMD3.json" />
+      </MainWrapper>
+    </MainPage>
   );
->>>>>>> 5802a56... Add: 회원가입, 로그인 기능 구현 완료. 리팩토링 진행 중
 };
 
 export default Main;
+
+const MainPage = styled.div`
+  ${flexcenter};
+`;
+
+const MainWrapper = styled.div`
+  ${flexcenter};
+  flex-direction: column;
+  min-height: 20vh;
+  width: 64em;
+`;
