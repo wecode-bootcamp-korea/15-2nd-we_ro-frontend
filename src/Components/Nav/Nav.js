@@ -1,12 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router";
 import { MAG_ICON, LEFT_BTN, RIGHT_BTN } from "../../config";
 import { flexcenter } from "../../styles/Theme";
 
 const Nav = () => {
+  const history = useHistory();
+  const goHome = () => {
+    history.push("/");
+  };
   return (
     <NavContainer>
-      <NavLogoSection>wero</NavLogoSection>
+      <NavLogoSection onClick={goHome}>
+        <NavLogoSectionTop>^</NavLogoSectionTop>
+        <NavLogoSectionBottom>wero</NavLogoSectionBottom>
+      </NavLogoSection>
       <NavBtnSection>
         {LEFT_BTN.map((el, i) => {
           return <NavBtnLeft key={i}>{el.content}</NavBtnLeft>;
@@ -31,7 +39,7 @@ const Nav = () => {
             <img alt="profile" src="/Images/profile.jpg" />
           </li>
         </NavLoginSection>
-      )}{" "}
+      )}
     </NavContainer>
   );
 };
@@ -40,19 +48,21 @@ export default Nav;
 
 const NavContainer = styled.div`
   ${flexcenter};
+  z-index: 10;
   position: fixed;
   top: 0%;
   width: 100%;
   height: 5em;
   background-color: white;
+  cursor: pointer;
 `;
 
 const NavLogoSection = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-direction: column;
   width: 4em;
-  font-size: 2em;
   font-family: Anton;
   font-weight: 655;
 
@@ -63,6 +73,16 @@ const NavLogoSection = styled.div`
   @media only screen and (max-width: 980px) {
     padding-right: 1em;
   }
+`;
+
+const NavLogoSectionTop = styled.div`
+  line-height: 0;
+  font-size: 1.4em;
+  padding-left: 1.1em;
+`;
+const NavLogoSectionBottom = styled.div`
+  line-height: 0.4;
+  font-size: 2em;
 `;
 
 const NavBtnSection = styled.div`
