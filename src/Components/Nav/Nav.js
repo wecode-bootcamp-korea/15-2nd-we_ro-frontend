@@ -40,11 +40,12 @@ export default Nav;
 
 const NavContainer = styled.div`
   ${flexcenter};
+  position: fixed;
   top: 0%;
   width: 100%;
   height: 5em;
   background-color: white;
-  z-index: 1;
+  z-index: 10;
 `;
 
 const NavLogoSection = styled.div`

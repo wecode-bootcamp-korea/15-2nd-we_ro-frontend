@@ -25,10 +25,11 @@ const GenreDetailWrapper = styled.div`
 `;
 
 const GenreContainer = styled.section`
-  width: 69%;
+  width: 61%;
   height: auto;
   margin: auto;
-  padding: 50px 80px 0 80px;
+  padding: 50px 0 50px 0;
+  overflow: hidden;
 
   h2 {
     height: 32px;

@@ -19,7 +19,7 @@ function ArtistBox({ imgUrl, title, listener }) {
           <Link to="/AlbumDetail">{title}</Link>
         </div>
         <div className="artist">
-          <Link to="/AlbumDetail">{listener}</Link>
+          <Link to="/AlbumDetail">주간 청취자 {Number(listener).toLocaleString()}명</Link>
         </div>
       </AlbumTextBox>
     </ArtistContainer>
@@ -49,7 +49,7 @@ const AlbumThumbNail = styled.div`
     height: 175px;
     top: 17px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.4);
   }
 
   .play {
@@ -72,7 +72,7 @@ const AlbumThumbNail = styled.div`
     top: 127px;
     color: #ffffff;
     border-radius: 50%;
-    border: 1px solid gray;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.4);
 
     &.circle:hover {
       color: blue;

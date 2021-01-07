@@ -6,9 +6,7 @@ function ArtistBoxMap({ artistList }) {
   return (
     <ArtistBoxContainer>
       {artistList?.map((artist, idx) => {
-        return (
-          <ArtistBox key={idx} id={artist.id} imgUrl={artist.imgUrl} title={artist.title} listener={artist.listener} />
-        );
+        return <ArtistBox key={idx} imgUrl={artist.image} title={artist.name} listener={artist.popularity} />;
       })}
     </ArtistBoxContainer>
   );
@@ -18,9 +16,8 @@ export default ArtistBoxMap;
 
 const ArtistBoxContainer = styled.article`
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(50, 1fr);
   gap: 10px 20px;
-  width: auto;
+  width: 200%;
   height: 261px;
-  overflow: hidden;
 `;
