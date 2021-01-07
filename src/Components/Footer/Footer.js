@@ -91,6 +91,7 @@ const FooterHeaderLeft = styled.div`
       font-size: 1em;
       font-weight: 500;
     }
+
     li:not(:last-child):after {
       content: "ㅤ";
     }
@@ -111,14 +112,17 @@ const FooterHeaderRight = styled.div`
 const FooterBase = styled.div`
   display: flex;
   flex-direction: column;
+
   .allRightsSec {
     display: flex;
     width: 100%;
     padding-top: 1.5em;
+
     .allRightsLeft {
       width: 50%;
       font-size: 0.7em;
     }
+
     .allRightsRight {
       display: flex;
       justify-content: flex-end;

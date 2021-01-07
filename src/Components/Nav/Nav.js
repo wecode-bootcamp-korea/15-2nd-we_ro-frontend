@@ -50,7 +50,6 @@ const NavContainer = styled.div`
   ${flexcenter};
   z-index: 10;
   position: fixed;
-  z-index: 2;
   top: 0%;
   width: 100%;
   height: 5em;
@@ -75,6 +74,7 @@ const NavLogoSection = styled.div`
     padding-right: 1em;
   }
 `;
+
 const NavLogoSectionTop = styled.div`
   line-height: 0;
   font-size: 1.4em;
