@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
+// import styled from "styled-components";
 import Form from "../SignIn/Components/Form";
-import { handleValidation } from "../utils";
 
 function SignIn() {
   const [accountForm] = useState(signUpProps);
@@ -99,12 +99,22 @@ function SignIn() {
 
   return (
     <div className="SignIn">
-      <button onClick={handleValidation}>signup test</button>
-      <button onClick={kakaoLogin}>kakao login test</button>
-      <Form format={accountForm} onChange={handleIdPasswordInput} value={email} />
+      <Form format={accountForm} onChange={handleIdPasswordInput} value={email}>
+        <button onClick={checkValidation}>이메일로 로그인</button>
+        <button onClick={kakaoLogin}>카카오로 로그인</button>
+      </Form>
     </div>
   );
 }
+
+export default SignIn;
+
+// const Form = styled.div`
+//   position: relative;
+//   vertical-align: top;
+//   width: 20%;
+//   height: 100%;
+// `;
 
 const signUpProps = {
   inputValue: [
@@ -116,11 +126,9 @@ const signUpProps = {
   ],
 
   buttonValue: [
-    { id: 1, text: "이메일 회원가입", onClick: { handleValidation } },
+    { id: 1, text: "이메일 회원가입" },
     { id: 2, text: "카카오 회원가입" },
   ],
 
   linkValue: [],
 };
-
-export default SignIn;
