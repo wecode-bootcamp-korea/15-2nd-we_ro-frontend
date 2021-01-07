@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import Nav from "./Components/Nav/Nav";
 import PlayBar from "./Components/PlayBar/PlayBar";
 import Chart from "./Pages/Chart/Chart";
+import MusicDetail from "./Pages/Chart/Components/MusicDetail/MusicDetail";
 import SignIn from "./Pages/SignIn/SignIn";
 import SignUp from "./Pages/SignUp/SignUp";
 import Main from "./Pages/Main/Main";
@@ -22,6 +23,7 @@ class Routes extends Component {
           <Route exact path="/signIn" component={SignIn} />
           <Route exact path="/signUp" component={SignUp} />
           <Route exact path="/chart" component={Chart} />
+          <Route exact path="/musicdetail/:id" component={MusicDetail} />
           <Route exact path="/storage" component={Storage} />
           <Route exact path="/genredetail" component={GenreDetail} />
           <Route exact path="/situationdetail" component={SituationDetail} />
