@@ -5,7 +5,7 @@ const ChartTab = props => {
   return (
     <TabContainer>
       <Button
-        value="total"
+        value=""
         onClick={e => {
           props.handleChangeBtn(e);
         }}
@@ -13,7 +13,7 @@ const ChartTab = props => {
         전체
       </Button>
       <Button
-        value="domestic"
+        value="/1"
         onClick={e => {
           props.handleChangeBtn(e);
         }}
@@ -21,7 +21,7 @@ const ChartTab = props => {
         국내
       </Button>
       <Button
-        value="foreign"
+        value="/2"
         onClick={e => {
           props.handleChangeBtn(e);
         }}
