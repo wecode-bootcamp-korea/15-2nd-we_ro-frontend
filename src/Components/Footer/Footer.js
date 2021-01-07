@@ -82,7 +82,7 @@ const FooterHeader = styled.div`
 
 const FooterHeaderLeft = styled.div`
   display: flex;
-  width: 50%;
+  width: 87%;
 
   ul {
     display: flex;
@@ -99,10 +99,8 @@ const FooterHeaderLeft = styled.div`
 `;
 
 const FooterHeaderRight = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 50%;
+  ${flexcenter};
+  width: 13%;
 
   .infoRight {
     .far {
