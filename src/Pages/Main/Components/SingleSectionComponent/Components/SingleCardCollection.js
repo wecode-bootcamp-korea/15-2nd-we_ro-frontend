@@ -20,7 +20,6 @@ const SingleCardCollection = () => {
         setSingleData(Arr);
       });
   }, []);
-  console.log(singleData);
   return (
     <SglCardCollection>
       {singleData.map((el, id) => {

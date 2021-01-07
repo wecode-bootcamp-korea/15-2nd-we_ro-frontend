@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-
 const ChartGenre = () => {
   return (
     <ContentSection>
@@ -12,13 +12,46 @@ const ChartGenre = () => {
         <ContentsListContainer>
           <ul className="genreList">
             <li>
-              <a>
+              <Link to="/genredetail">
+                <img alt="애럼's Pick" src="/Images/nike.jpeg" />
+                <span>애럼's Pick</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/genredetail">
                 <img
-                  alt="발라드"
-                  src="https://cdn.music-flo.com/poc/p/image/display/genre_rc/20200911/cf603facfcbe45b5acf3421b0843f49a.jpg"
+                  alt="태진's Pick"
+                  src="https://images.unsplash.com/photo-1609954451401-545b43fb59b8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                 />
-                <span>발라드</span>
-              </a>
+                <span>태진's Pick</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/genredetail">
+                <img
+                  alt="병곤's Pick"
+                  src="https://images.unsplash.com/photo-1606851281895-c4d3b1c134e7?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                />
+                <span>병곤's Pick</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/genredetail">
+                <img
+                  alt="영광's Pick"
+                  src="https://images.unsplash.com/photo-1609862351410-709228a62361?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                />
+                <span>영광's Pick</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/genredetail">
+                <img
+                  alt="승현&순태's Pick"
+                  src="https://images.unsplash.com/photo-1609855900260-759aa47281e5?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNDh8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                />
+                <span>승현&순태's Pick</span>
+              </Link>
             </li>
           </ul>
         </ContentsListContainer>
@@ -47,7 +80,7 @@ const ContentsListContainer = styled.div`
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 3px;
     margin-left: 7px;
     list-style: none;
@@ -83,11 +116,11 @@ const ContentsListContainer = styled.div`
           border-radius: 6px;
         }
         span {
-          font-size: 20px;
-          color: #fff;
+          font: italic bold 18px;
+          color: #eeeeee;
           position: relative;
           display: inline-block;
-          margin: 22px 0 0 18px;
+          margin: 22px 0 0 10px;
           z-index: 1;
         }
       }
