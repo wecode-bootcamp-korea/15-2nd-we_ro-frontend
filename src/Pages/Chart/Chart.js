@@ -5,9 +5,11 @@ import ChartTab from "./Components/ChartTab";
 import ChartContentsHead from "./Components/ChartContentsHead";
 import ChartHead from "./Components/ChartHead";
 import Modal from "./Components/Modal";
+import { LIST_API, TOTAL_API } from "../../config";
 import axios from "axios";
 import styled from "styled-components";
 
+const TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.O3B5nLCE4HFsIwOkgtAAqXTZu_bFTcKb2Zl8zRDIGOc";
 const Chart = () => {
   // 데이터받아오기
   const [totalData, setTotalData] = useState([]);
@@ -17,8 +19,8 @@ const Chart = () => {
   }, []);
 
   const getTotalData = async () => {
-    let result = await axios.get("data/total.json");
-    setTotalData(result.data.total);
+    let result = await axios.get(`${TOTAL_API}/music`);
+    setTotalData(result.data.MusicInfo);
   };
 
   //국내 해외
@@ -26,10 +28,14 @@ const Chart = () => {
 
   const handleChangeBtn = async e => {
     const { value } = e.target;
-    const result = await axios.get(`data/${value}.json`);
-
+    const result = await axios.get(`${TOTAL_API}/music${value}`);
     setValue(value);
-    setTotalData(result.data[value]);
+
+    if (value == "") {
+      setTotalData(result.data.MusicInfo);
+    } else {
+      setTotalData(result.data.Music_info);
+    }
   };
 
   // 10개만 보여줬다가 더보기 누르면 다 보여주기.
@@ -70,22 +76,22 @@ const Chart = () => {
   };
 
   // 리스트로 보내기
-
   const goToList = e => {
     checkedItems ? console.log(checkedItems) : alert("체크해요");
-    // fetch(`${PRODUCT_CART_API}/orders/cart`, {
-    //   method: 'POST',
-    //   body: JSON.stringify({
-    //     product_id: products.id,
-    //     quantity: count,
-    //     option_id: Number(kg_value),
-    //   }),
-    // });
+    fetch(`${LIST_API}/storage/mylist/1/music`, {
+      method: "POST",
+      headers: {
+        Character: 1,
+        Authorization: TOKEN,
+      },
+      body: JSON.stringify({
+        id: checkedItems,
+      }),
+    })
+      .then(res => res.json())
+      .then(res => console.log(res));
     alert(`리스트에 ${count}곡이 추가되었습니다.`);
   };
-
-  // playbar로 보내기
-  const SelectMusic = () => {};
 
   return (
     <>
