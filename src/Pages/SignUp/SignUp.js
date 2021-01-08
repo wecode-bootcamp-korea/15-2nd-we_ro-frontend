@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
+import styled from "styled-components";
 import Form from "../SignIn/Components/Form";
-import { handleValidation } from "../utils";
 
-function SignIn() {
+function SignUp() {
   const [accountForm] = useState(signUpProps);
   const history = useHistory();
   const [checkEmail, setCheckEmail] = useState(false);
@@ -84,7 +84,7 @@ function SignIn() {
           .then(res => {
             sessionStorage.setItem("kakao_access_token", res.access_token);
             if (res.MESSAGE === "SUCCESS") {
-              alert("KAKAO LOGIN SUCCESS");
+              alert("카카오로 로그인 하셨습니다");
               history.push("/SignIn");
             } else {
               alert("KAKAO LOGIN FAIL");
@@ -98,11 +98,16 @@ function SignIn() {
   };
 
   return (
-    <div className="SignIn">
-      <button onClick={handleValidation}>signup test</button>
-      <button onClick={kakaoLogin}>kakao login test</button>
+    <SignUpDiv>
+      <p>회원가입</p>
       <Form format={accountForm} onChange={handleIdPasswordInput} value={email} />
-    </div>
+      <button className="signUpBtn" onClick={checkValidation}>
+        이메일로 회원가입
+      </button>
+      <button className="kakaoBtn" onClick={kakaoLogin}>
+        카카오로 회원가입
+      </button>
+    </SignUpDiv>
   );
 }
 
@@ -115,12 +120,72 @@ const signUpProps = {
     { id: 5, name: "phone_number", type: "text", placeholder: "전화번호" },
   ],
 
-  buttonValue: [
-    { id: 1, text: "이메일 회원가입", onClick: { handleValidation } },
-    { id: 2, text: "카카오 회원가입" },
-  ],
+  buttonValue: [],
 
   linkValue: [],
+  imgValue: [],
 };
+export default SignUp;
 
-export default SignIn;
+const SignUpDiv = styled.div`
+  width: 682px;
+  padding: 50px 120px;
+  margin: 160px auto;
+  border: 1px solid #d9d9d9;
+
+  p {
+    position: absolute;
+    top: 0;
+  }
+
+  .signUpBtn {
+    outline: 0;
+    width: 100%;
+    display: block;
+    background-color: #3f3fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #fff;
+    height: 3.125rem;
+    text-align: center;
+    line-height: 3.125rem;
+    margin-bottom: 0.625rem;
+    margin-top: 60px;
+    height: 62px;
+    line-height: 62px;
+    font-size: 18px;
+    border: none;
+  }
+
+  .kakaoBtn {
+    outline: 0;
+    width: 100%;
+    display: block;
+    background-color: #fae102;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #000;
+    height: 3.125rem;
+    text-align: center;
+    line-height: 3.125rem;
+    margin-bottom: 0.625rem;
+    height: 62px;
+    line-height: 62px;
+    font-size: 18px;
+    border: none;
+  }
+  input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ebebeb;
+    height: 58px;
+    font-size: 15px;
+    color: #181818;
+    border-radius: 0;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+`;

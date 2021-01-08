@@ -1,0 +1,28 @@
+{
+  "playlist": [
+    {
+      "music_id": 1,
+      "music_name": "KISS ME",
+      "music_artist": "DPR Live",
+      "music_img": "./images/DPR live-1.jpg"
+    },
+    {
+      "music_id": 2,
+      "music_name": "Like That",
+      "music_artist": "Doja Cat",
+      "music_img": "./images/likethat.jpg"
+    },
+    {
+      "music_id": 3,
+      "music_name": "Text Me",
+      "music_artist": "DPR Live",
+      "music_img": "./images/DPR-Her.jpg"
+    },
+    {
+      "music_id": 4,
+      "music_name": "Say So",
+      "music_artist": "Doja Cat",
+      "music_img": "./images/Dojacat-SaySo.jpg"
+    }
+  ]
+}

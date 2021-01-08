@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ChartHead from "../ChartHead";
+import { ALBUM_API } from "../../../../config";
 import MusicDetailCard from "./MusicDetailCard";
 import axios from "axios";
 import styled from "styled-components";
@@ -15,8 +16,8 @@ const MusicDetail = () => {
   }, []);
 
   const getDetailData = async () => {
-    let result = await axios.get("/data/album.json");
-    const newResult = result.data.album;
+    let result = await axios.get(`${ALBUM_API}/music/albums`);
+    const newResult = result.data.albums;
     const matched = newResult.find(item => {
       return item.album_id == id;
     });

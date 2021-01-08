@@ -1,16 +1,43 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router";
 import { MAG_ICON, LEFT_BTN, RIGHT_BTN } from "../../config";
 import { flexcenter } from "../../styles/Theme";
 
 const Nav = () => {
+  const history = useHistory();
+  const goHome = () => {
+    history.push("/");
+  };
+
+  const goToChart = () => {
+    history.push("/chart");
+  };
+
+  const goToMyPage = () => {
+    history.push("/mypage");
+  };
+
+  const goSignIn = () => {
+    history.push("/signin");
+  };
+
+  const goSignUp = () => {
+    history.push("/signup");
+  };
   return (
     <NavContainer>
-      <NavLogoSection>wero</NavLogoSection>
+      <NavLogoSection onClick={goHome}>
+        <NavLogoSectionTop>^</NavLogoSectionTop>
+        <NavLogoSectionBottom>wero</NavLogoSectionBottom>
+      </NavLogoSection>
       <NavBtnSection>
-        {LEFT_BTN.map((el, i) => {
+        {/* {LEFT_BTN.map((el, i) => {
           return <NavBtnLeft key={i}>{el.content}</NavBtnLeft>;
-        })}
+        })} */}
+        <NavBtnLeft onClick={goToChart}>둘러보기</NavBtnLeft>
+        <NavBtnLeft onClick={goHome}>보관함</NavBtnLeft>
+        <NavBtnLeft onClick={goHome}>이용권</NavBtnLeft>
       </NavBtnSection>
       <NavSearchSection>
         <svg class="svg-icon" viewBox="0 0 20 20">
@@ -20,18 +47,18 @@ const Nav = () => {
       </NavSearchSection>
       {sessionStorage.length === 0 ? (
         <NavLoginSection>
-          {RIGHT_BTN.map((el, i) => {
-            return <NavBtnRight key={i}>{el.content}</NavBtnRight>;
-          })}
+          <NavBtnRight onClick={goHome}>FLO 소개</NavBtnRight>
+          <NavBtnRight onClick={goSignIn}>로그인</NavBtnRight>
+          <NavBtnRight onClick={goSignUp}>회원가입</NavBtnRight>
         </NavLoginSection>
       ) : (
-        <NavLoginSection>
+        <NavLoginSectionSigned>
           <NavBtnRight>FLO 소개</NavBtnRight>
-          <li className="profile">
+          <li className="profile" onClick={goToMyPage}>
             <img alt="profile" src="/Images/profile.jpg" />
           </li>
-        </NavLoginSection>
-      )}{" "}
+        </NavLoginSectionSigned>
+      )}
     </NavContainer>
   );
 };
@@ -40,20 +67,21 @@ export default Nav;
 
 const NavContainer = styled.div`
   ${flexcenter};
+  z-index: 10;
   position: fixed;
   top: 0%;
   width: 100%;
   height: 5em;
   background-color: white;
-  z-index: 10;
+  cursor: pointer;
 `;
 
 const NavLogoSection = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-direction: column;
   width: 4em;
-  font-size: 2em;
   font-family: Anton;
   font-weight: 655;
 
@@ -64,6 +92,16 @@ const NavLogoSection = styled.div`
   @media only screen and (max-width: 980px) {
     padding-right: 1em;
   }
+`;
+
+const NavLogoSectionTop = styled.div`
+  line-height: 0;
+  font-size: 1.4em;
+  padding-left: 1.1em;
+`;
+const NavLogoSectionBottom = styled.div`
+  line-height: 0.4;
+  font-size: 2em;
 `;
 
 const NavBtnSection = styled.div`
@@ -118,9 +156,21 @@ const NavSearchSection = styled.div`
 const NavLoginSection = styled.div`
   ${flexcenter};
   width: 18em;
-  margin-left: 3.5em;
+  margin-left: 3em;
   font-weight: normal;
   cursor: pointer;
+`;
+const NavLoginSectionSigned = styled.div`
+  ${flexcenter};
+  width: 12em;
+  padding-left: 3.5em;
+  font-weight: normal;
+  cursor: pointer;
+  img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+  }
 `;
 
 const NavBtnLeft = styled.div`
