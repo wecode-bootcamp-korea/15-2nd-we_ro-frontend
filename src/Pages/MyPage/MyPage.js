@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Form from "../SignIn/Components/Form";
 
+const { Kakao } = window;
+
 function MyPage() {
   const [accountForm] = useState(myFavorite);
 
@@ -43,13 +45,22 @@ function MyPage() {
   //   );
   // }
 
+  const goToLogOut = () => {
+    if (Kakao.Auth.getAccessToken()) {
+      console.log("카카오 인증 액세스 토큰이 존재함", Kakao.Auth.getAccessToken());
+      Kakao.Auth.goToLogOut(() => {
+        console.log("로그아웃됨", Kakao.Auth.getAccessToken());
+      });
+    }
+  };
+
   return (
     <div className="SignIn">
       <div>마이페이지</div>
       <div>계정정보</div>
       <button className="Button" />
       <button className="Button" />
-
+      <button onClick={goToLogOut}> logout test</button>
       <Form format={accountForm} />
     </div>
   );
@@ -68,5 +79,12 @@ const myFavorite = {
   inputValue: [],
   linkValue: [],
 };
+
+// const myChar = {
+//   imgValue: [{ id: 1, text: "아이유", alt: "아이유", src: "/" }],
+//   buttonValue: [],
+//   inputValue: [],
+//   linkValue: [],
+// };
 
 export default MyPage;
