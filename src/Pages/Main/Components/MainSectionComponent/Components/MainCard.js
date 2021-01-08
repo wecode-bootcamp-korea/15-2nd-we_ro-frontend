@@ -5,21 +5,21 @@ import { flexcenter } from "../../../../../styles/Theme";
 const MainCard = ({ albumInfo }) => {
   return (
     <>
-      {albumInfo.map((el, id) => {
+      {/* {albumInfo.map((el, id) => {
         return (
           <MainCardWrapper>
             <MainCardSection key={id}>
               <MainCardSectionLeft>
-                <img alt="albumcover" src={el.url} />
+                <img alt="albumcover" src={el.album_cover} />
               </MainCardSectionLeft>
               <MainCardSectionRight>
-                <MainCardSectionRightTop>{el.name}</MainCardSectionRightTop>
-                <MainCardSectionRightBottom>{el.singer}</MainCardSectionRightBottom>
+                <MainCardSectionRightTop>{el.album_name}</MainCardSectionRightTop>
+                <MainCardSectionRightBottom>{el.artist_name}</MainCardSectionRightBottom>
               </MainCardSectionRight>
             </MainCardSection>
           </MainCardWrapper>
         );
-      })}
+      })} */}
     </>
   );
 };

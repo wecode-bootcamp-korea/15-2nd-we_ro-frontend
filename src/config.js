@@ -29,6 +29,8 @@ export const heart =
 
 export const TOTAL_API = "http://10.168.1.52:8000/music/info";
 
-export const DOMESTIC_API = "http://10.168.1.52:8000/music/country/1";
+export const DOMESTIC_API = "http://10.168.1.52:8000/music/1";
 
-export const FOREIGN_API = "";
+export const FOREIGN_API = "http://10.168.1.52:8000/music/country/2";
+
+export const MAIN_API = "http://10.168.1.52:8000/music/albums";

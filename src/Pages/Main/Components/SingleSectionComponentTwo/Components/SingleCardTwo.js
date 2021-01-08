@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
-const SingleCard = ({ albumInfo }) => {
+const SingleCardTwo = ({ albumInfo }) => {
   return (
     <>
       {albumInfo.map((el, id) => {
@@ -24,7 +24,7 @@ const SingleCard = ({ albumInfo }) => {
   );
 };
 
-export default SingleCard;
+export default SingleCardTwo;
 
 const AlbumContainer = styled.div`
   display: inline-block;
