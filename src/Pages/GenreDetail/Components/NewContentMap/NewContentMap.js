@@ -11,7 +11,7 @@ function NewContentMap({ albumList }) {
             key={idx}
             id={album.album_id}
             imgUrl={album.album_cover}
-            title={album.track_info[0].name}
+            title={album.country}
             artist={album.artist_name}
           />
         );

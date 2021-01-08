@@ -13,7 +13,7 @@ function ThemeContent() {
   }, []);
 
   const getThemeContent = () => {
-    fetch("http://10.168.1.52:8000/music")
+    fetch("http://10.168.1.42:8000/music")
       .then(res => res.json())
       .then(res => setAlbumList(res.MusicInfo));
   };
@@ -61,6 +61,7 @@ function ThemeContent() {
 export default ThemeContent;
 
 const ThemeContentt = styled.section`
+  overflow: hidden;
   height: 337px;
   padding-top: 50px;
 

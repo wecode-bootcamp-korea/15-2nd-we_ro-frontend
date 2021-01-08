@@ -13,7 +13,7 @@ function PopularContent() {
   }, []);
 
   const getPopularContent = () => {
-    fetch("http://10.168.1.52:8000/music/artists")
+    fetch("http://10.168.1.42:8000/music/artists")
       .then(res => res.json())
       .then(res => setArtistList(res.artist));
   };

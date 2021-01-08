@@ -12,7 +12,7 @@ function NewContent() {
   }, []);
 
   const getNewContent = () => {
-    fetch("http://10.168.1.52:8000/music/albums")
+    fetch("http://10.168.1.42:8000/music/albums")
       .then(res => res.json())
       .then(res => setAlbumList(res.albums));
   };
