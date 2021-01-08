@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
 import Form from "./Components/Form";
+import styled from "styled-components";
+import Nav from "../../Components/Nav/Nav";
 
 const { Kakao } = window;
 
@@ -26,12 +28,11 @@ function SignIn() {
   const checkValidation = () => {
     const pwRule = /^.*(?=^.{8,16}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[~,!,@,#,$,*,(,),=,+,_,.,|]).*$/;
     const emailRule = /^[a-zA-Z0-9+-_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    const emailRuleSet = email.match(emailRule);
-    const pwRuleSet = password.match(pwRule);
-    const inputPass = emailRuleSet && pwRuleSet;
+    const inputPass = checkEmail && checkPassword;
 
-    setCheckEmail(emailRuleSet ? true : false);
-    setCheckPassword(pwRuleSet ? true : false);
+    email.match(emailRule) ? setCheckEmail(true) : setCheckEmail(false);
+    password.match(pwRule) ? setCheckPassword(true) : setCheckPassword(false);
+
     inputPass && signInFetch();
   };
 
@@ -87,24 +88,16 @@ function SignIn() {
     });
   };
 
-  const goToLogOut = () => {
-    if (Kakao.Auth.getAccessToken()) {
-      console.log("카카오 인증 액세스 토큰이 존재함", Kakao.Auth.getAccessToken());
-      Kakao.Auth.goToLogOut(() => {
-        console.log("로그아웃됨", Kakao.Auth.getAccessToken());
-      });
-    }
-  };
-
   return (
-    <div className="SignIn">
+    <SignInDiv>
       <Form format={accountForm} onChange={handleIdPasswordInput} value={email} />
-      <div className={checkEmail ? "inputStatus" : "displayNone"}>정확하지 않은 이메일입니다 </div>
-      <div className={checkPassword ? "inputStatus" : "displayNone"}>정확하지 않은 비밀번호입니다</div>
-      <button onClick={checkValidation}> login test</button>
-      <button onClick={socialLogin}> social login test</button>
-      <button onClick={goToLogOut}> logout test</button>
-    </div>
+      <button className="logInBtn" onClick={checkValidation}>
+        로그인
+      </button>
+      <button className="kakaoBtn" onClick={socialLogin}>
+        카카오 로그인
+      </button>
+    </SignInDiv>
   );
 }
 
@@ -112,19 +105,78 @@ const signInProps = {
   inputValue: [
     { id: 1, name: "email", type: "id", placeholder: "아이디(이메일)" },
     { id: 2, name: "password", type: "password", placeholder: "비밀번호" },
-    { id: 3, type: "checkbox", placeholder: "아이디 저장" },
   ],
-
-  buttonValue: [
-    { id: 1, text: "로그인" },
-    { id: 2, text: "카카오 로그인" },
-  ],
-
-  linkValue: [
-    { id: 1, text: "아이디 찾기", url: "/" },
-    { id: 2, text: "비밀번호 찾기", url: "/" },
-    { id: 3, text: "회원가입", url: "/signup" },
-  ],
+  linkValue: [{ id: 1, text: "회원가입", url: "/signup" }],
+  buttonValue: [],
+  imgValue: [],
 };
 
 export default SignIn;
+
+const SignInDiv = styled.div`
+  width: 682px;
+  padding: 50px 120px;
+  margin: 160px auto;
+  border: 1px solid #d9d9d9;
+
+  input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ebebeb;
+    height: 58px;
+    font-size: 15px;
+    color: #181818;
+    border-radius: 0;
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .logInBtn {
+    outline: 0;
+    width: 100%;
+    display: block;
+    background-color: #3f3fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #fff;
+    height: 3.125rem;
+    text-align: center;
+    line-height: 3.125rem;
+    margin-bottom: 0.625rem;
+    height: 62px;
+    line-height: 62px;
+    font-size: 18px;
+    border: none;
+  }
+
+  a {
+    padding: 30px 0;
+    display: block;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    color: #929292;
+  }
+
+  .kakaoBtn {
+    outline: 0;
+    width: 100%;
+    display: block;
+    background-color: #fae102;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #000;
+    height: 3.125rem;
+    text-align: center;
+    line-height: 3.125rem;
+    margin-bottom: 0.625rem;
+    height: 62px;
+    line-height: 62px;
+    font-size: 18px;
+    border: none;
+  }
+`;
