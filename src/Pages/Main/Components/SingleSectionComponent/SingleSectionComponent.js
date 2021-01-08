@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import SingleSectionSlider from "./Components/SingleSectionSlider";
 
-const SingleSectionComponent = ({ mdName, objName }) => {
+const SingleSectionComponent = () => {
   return (
     <SingleSection>
-      <SingleSectionSlider mdName={mdName} objName={objName}></SingleSectionSlider>
+      <SingleSectionSlider />
     </SingleSection>
   );
 };

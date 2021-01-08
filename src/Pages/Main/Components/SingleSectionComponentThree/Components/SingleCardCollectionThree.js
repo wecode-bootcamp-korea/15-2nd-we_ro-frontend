@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import SingleCard from "./SingleCard";
+import SingleCard from "./SingleCardThree";
 import { MAIN_API } from "../../../../../config";
 
-const SingleCardCollection = () => {
+const SingleCardCollectionThree = () => {
   const [singleData, setSingleData] = useState([]);
 
   React.useEffect(() => {
@@ -12,35 +12,33 @@ const SingleCardCollection = () => {
     })
       .then(res => res.json())
       .then(res => {
-        const length = res.albums.length;
         const Arr = [];
-        for (let i = 0; i < length / 20; i++) {
+        for (let i = 2; i < 4; i++) {
           Arr.push(res.albums.slice(i * 5, i * 5 + 5));
         }
         setSingleData(Arr);
       });
   }, []);
-  console.log(singleData);
   return (
-    <SglCardCollection>
+    <SglCardCollectionThree>
       {singleData.map((el, id) => {
         return (
-          <SingleCardCollectionSection key={id}>
+          <SingleCardCollectionSectionThree key={id}>
             <SingleCard albumInfo={singleData[id]} />
-          </SingleCardCollectionSection>
+          </SingleCardCollectionSectionThree>
         );
       })}
-    </SglCardCollection>
+    </SglCardCollectionThree>
   );
 };
 
-export default SingleCardCollection;
+export default SingleCardCollectionThree;
 
-const SglCardCollection = styled.div`
+const SglCardCollectionThree = styled.div`
   display: flex;
 `;
 
-const SingleCardCollectionSection = styled.div`
+const SingleCardCollectionSectionThree = styled.div`
   display: block;
   width: 100%;
   height: 100%;

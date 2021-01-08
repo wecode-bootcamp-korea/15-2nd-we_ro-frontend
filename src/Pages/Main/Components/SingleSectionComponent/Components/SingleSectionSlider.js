@@ -4,8 +4,7 @@ import { flexcenter } from "../../../../../styles/Theme";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import SingleCardCollection from "./SingleCardCollection";
 
-const SingleSectionSlider = ({ mdName }) => {
-  const [data, setData] = useState([]);
+const SingleSectionSlider = () => {
   const [x, setX] = useState(0);
   const [current, setCurrent] = useState(0);
   const length = 2;
@@ -37,7 +36,7 @@ const SingleSectionSlider = ({ mdName }) => {
             </SingleMidTopRight>
           </SingleMidTop>
           <SingleMidBottom style={{ transform: `translateX(${x}%)` }}>
-            <SingleCardCollection mdName={mdName} />
+            <SingleCardCollection />
           </SingleMidBottom>
         </SingleMid>
         <SingleRight></SingleRight>

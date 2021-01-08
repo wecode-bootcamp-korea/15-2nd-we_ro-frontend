@@ -2,6 +2,8 @@ import React from "react";
 import MainSectionComponent from "./Components/MainSectionComponent/MainSectionComponent";
 import DoubleSectionComponent from "./Components/DoubleSectionComponent/DoubleSectionComponent";
 import SingleSectionComponent from "./Components/SingleSectionComponent/SingleSectionComponent";
+import SingleSectionComponentTwo from "./Components/SingleSectionComponentTwo/SingleSectionComponentTwo";
+import SingleSectionComponentThree from "./Components/SingleSectionComponentThree/SingleSectionComponentThree";
 import styled from "styled-components";
 import { flexcenter } from "../../styles/Theme";
 
@@ -11,9 +13,9 @@ const Main = () => {
       <MainWrapper>
         <MainSectionComponent />
         <DoubleSectionComponent />
-        <SingleSectionComponent mdName="/data/singleMD1.json" />
-        <SingleSectionComponent mdName="/data/singleMD2.json" />
-        <SingleSectionComponent mdName="/data/singleMD3.json" />
+        <SingleSectionComponent />
+        <SingleSectionComponentTwo />
+        <SingleSectionComponentThree />
       </MainWrapper>
     </MainPage>
   );

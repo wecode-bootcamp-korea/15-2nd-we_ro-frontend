@@ -9,6 +9,22 @@ const Nav = () => {
   const goHome = () => {
     history.push("/");
   };
+
+  const goToChart = () => {
+    history.push("/chart");
+  };
+
+  const goToMyPage = () => {
+    history.push("/mypage");
+  };
+
+  const goSignIn = () => {
+    history.push("/signin");
+  };
+
+  const goSignUp = () => {
+    history.push("/signup");
+  };
   return (
     <NavContainer>
       <NavLogoSection onClick={goHome}>
@@ -16,9 +32,12 @@ const Nav = () => {
         <NavLogoSectionBottom>wero</NavLogoSectionBottom>
       </NavLogoSection>
       <NavBtnSection>
-        {LEFT_BTN.map((el, i) => {
+        {/* {LEFT_BTN.map((el, i) => {
           return <NavBtnLeft key={i}>{el.content}</NavBtnLeft>;
-        })}
+        })} */}
+        <NavBtnLeft onClick={goToChart}>둘러보기</NavBtnLeft>
+        <NavBtnLeft onClick={goHome}>보관함</NavBtnLeft>
+        <NavBtnLeft onClick={goHome}>이용권</NavBtnLeft>
       </NavBtnSection>
       <NavSearchSection>
         <svg class="svg-icon" viewBox="0 0 20 20">
@@ -28,17 +47,17 @@ const Nav = () => {
       </NavSearchSection>
       {sessionStorage.length === 0 ? (
         <NavLoginSection>
-          {RIGHT_BTN.map((el, i) => {
-            return <NavBtnRight key={i}>{el.content}</NavBtnRight>;
-          })}
+          <NavBtnRight onClick={goHome}>FLO 소개</NavBtnRight>
+          <NavBtnRight onClick={goSignIn}>로그인</NavBtnRight>
+          <NavBtnRight onClick={goSignUp}>회원가입</NavBtnRight>
         </NavLoginSection>
       ) : (
-        <NavLoginSection>
+        <NavLoginSectionSigned>
           <NavBtnRight>FLO 소개</NavBtnRight>
-          <li className="profile">
+          <li className="profile" onClick={goToMyPage}>
             <img alt="profile" src="/Images/profile.jpg" />
           </li>
-        </NavLoginSection>
+        </NavLoginSectionSigned>
       )}
     </NavContainer>
   );
@@ -137,9 +156,21 @@ const NavSearchSection = styled.div`
 const NavLoginSection = styled.div`
   ${flexcenter};
   width: 18em;
-  margin-left: 3.5em;
+  margin-left: 3em;
   font-weight: normal;
   cursor: pointer;
+`;
+const NavLoginSectionSigned = styled.div`
+  ${flexcenter};
+  width: 12em;
+  padding-left: 3.5em;
+  font-weight: normal;
+  cursor: pointer;
+  img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+  }
 `;
 
 const NavBtnLeft = styled.div`
