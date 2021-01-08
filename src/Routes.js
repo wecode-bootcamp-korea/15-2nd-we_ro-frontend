@@ -8,10 +8,12 @@ import Chart from "./Pages/Chart/Chart";
 import MusicDetail from "./Pages/Chart/Components/MusicDetail/MusicDetail";
 import SignIn from "./Pages/SignIn/SignIn";
 import SignUp from "./Pages/SignUp/SignUp";
+import MyPage from "./Pages/MyPage/MyPage";
 import Main from "./Pages/Main/Main";
 import Storage from "./Pages/Storage/Storage";
 import GenreDetail from "./Pages/GenreDetail/GenreDetail";
 import SituationDetail from "./Components/SituationDetail/SituationDetail";
+
 class Routes extends Component {
   render() {
     return (
@@ -22,6 +24,7 @@ class Routes extends Component {
           <Route exact path="/albumDetail" component={AlbumDetail} />
           <Route exact path="/signIn" component={SignIn} />
           <Route exact path="/signUp" component={SignUp} />
+          <Route exact path="/mypage" component={MyPage} />
           <Route exact path="/chart" component={Chart} />
           <Route exact path="/musicdetail/:id" component={MusicDetail} />
           <Route exact path="/storage" component={Storage} />

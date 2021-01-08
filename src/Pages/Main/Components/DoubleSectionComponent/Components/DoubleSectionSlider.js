@@ -24,7 +24,6 @@ const DoubleSectionSlider = () => {
     setX(x - 50);
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
-  console.log(current);
   return (
     <>
       <ThisDoubleSection>

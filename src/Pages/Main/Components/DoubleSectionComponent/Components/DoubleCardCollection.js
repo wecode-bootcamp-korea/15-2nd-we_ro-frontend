@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import DoubleCard from "./DoubleCard";
+import { MAIN_API } from "../../../../../config";
 
 const DoubleCardCollection = () => {
   const [doubleData, setDoubleData] = useState([]);
 
   React.useEffect(() => {
-    fetch("/data/aramDbleMD.json")
+    fetch(MAIN_API, {
+      method: "GET",
+    })
       .then(res => res.json())
-      .then(res => setDoubleData(res.testDouble));
+      .then(res => {
+        const length = res.albums.length;
+        const Arr = [];
+        for (let i = 2; i < 4; i++) {
+          Arr.push(res.albums.slice(i * 10, i * 10 + 10));
+        }
+        setDoubleData(Arr);
+      });
   }, []);
 
   return (
@@ -16,7 +26,7 @@ const DoubleCardCollection = () => {
       {doubleData.map((el, id) => {
         return (
           <DoubleCardCollectionSection key={id}>
-            <DoubleCard albumInfo={doubleData[id].album} />
+            <DoubleCard albumInfo={doubleData[id]} />
           </DoubleCardCollectionSection>
         );
       })}

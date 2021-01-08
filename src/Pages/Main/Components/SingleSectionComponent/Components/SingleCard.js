@@ -10,12 +10,12 @@ const SingleCard = ({ albumInfo }) => {
         return (
           <AlbumContainer key={id}>
             <AlbumThumbNail>
-              <img alt="albumcover" src={el.url} />
+              <img alt="albumcover" src={el.album_cover} />
               <FontAwesomeIcon key={id} className="far" icon={faPlay} />
             </AlbumThumbNail>
             <AlbumTextBox>
-              <TitleOfSong>{el.name}</TitleOfSong>
-              <Artist>{el.singer}</Artist>
+              <TitleOfSong>{el.album_name}</TitleOfSong>
+              <Artist>{el.artist_name}</Artist>
             </AlbumTextBox>
           </AlbumContainer>
         );

@@ -1,23 +1,32 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import SingleCard from "./SingleCard";
+import { MAIN_API } from "../../../../../config";
 
-const SingleCardCollection = ({ mdName }) => {
+const SingleCardCollection = () => {
   const [singleData, setSingleData] = useState([]);
 
   React.useEffect(() => {
-    fetch(mdName)
+    fetch(MAIN_API, {
+      method: "GET",
+    })
       .then(res => res.json())
-      .then(res => setSingleData(res.testSingle));
+      .then(res => {
+        const length = res.albums.length;
+        const Arr = [];
+        for (let i = 0; i < length / 20; i++) {
+          Arr.push(res.albums.slice(i * 5, i * 5 + 5));
+        }
+        setSingleData(Arr);
+      });
   }, []);
-  console.log({ mdName });
-
+  console.log(singleData);
   return (
     <SglCardCollection>
       {singleData.map((el, id) => {
         return (
           <SingleCardCollectionSection key={id}>
-            <SingleCard albumInfo={singleData[id].album} />
+            <SingleCard albumInfo={singleData[id]} />
           </SingleCardCollectionSection>
         );
       })}

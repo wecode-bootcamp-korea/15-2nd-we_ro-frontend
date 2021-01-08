@@ -5,12 +5,12 @@ import { FaPlayCircle } from "react-icons/fa";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import MainCardCollection from "./MainCardCollection";
 import { BsDot } from "react-icons/bs";
+import { MAIN_API } from "../../../../../config";
 
 const MainSectionSlider = () => {
   const [data, setData] = useState([]);
   const [realData, setRealData] = useState([]);
   const [x, setX] = useState(0);
-  const FIRST_API = "http://10.168.1.52:8000/music/album/info";
   const [current, setCurrent] = useState(0);
   const length = data.length;
 
@@ -18,6 +18,21 @@ const MainSectionSlider = () => {
     fetch("/data/aramData.json")
       .then(res => res.json())
       .then(res => setData(res.songs1));
+  }, []);
+
+  React.useEffect(() => {
+    fetch(MAIN_API, {
+      method: "GET",
+    })
+      .then(res => res.json())
+      .then(res => {
+        const length = res.albums.length;
+        const Arr = [];
+        for (let i = 0; i < 5; i++) {
+          Arr.push(res.albums.slice(i * 8, i * 8 + 8));
+        }
+        setRealData(Arr);
+      });
   }, []);
 
   const prevSlide = () => {
@@ -77,7 +92,7 @@ const MainSectionSlider = () => {
                     </div>
                   </MainParts>
                   <MainParts>
-                    <MainCardCollection albumInfo={data[id].album} />
+                    <MainCardCollection albumInfo={realData[id]} />
                   </MainParts>
                 </MainSectionMid>
               );
