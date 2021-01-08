@@ -8,6 +8,7 @@ import styled from "styled-components";
 import { flexcenter } from "../../styles/Theme";
 
 const Main = () => {
+
   return (
     <MainPage>
       <MainWrapper>

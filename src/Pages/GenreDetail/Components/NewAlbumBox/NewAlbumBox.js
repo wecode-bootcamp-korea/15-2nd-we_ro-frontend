@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
-function AlbumBox({ imgUrl, title, artist }) {
+function NewAlbumBox({ imgUrl, title, artist, country }) {
   return (
     <AlbumContainer>
       <AlbumThumbNail>
@@ -25,7 +25,7 @@ function AlbumBox({ imgUrl, title, artist }) {
   );
 }
 
-export default AlbumBox;
+export default NewAlbumBox;
 
 const AlbumContainer = styled.div`
   position: relative;

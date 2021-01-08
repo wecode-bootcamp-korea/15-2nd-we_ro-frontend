@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faPlay, faPlayCircle } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
 
-function AlbumBox({ imgUrl, title, artist }) {
+function ArtistBox({ imgUrl, title, listener }) {
   return (
-    <AlbumContainer>
+    <ArtistContainer>
       <AlbumThumbNail>
         <Link to="/AlbumDetail">
-          <img alt="albumCover" src={imgUrl} />
-          <FontAwesomeIcon className="far" icon={faPlay} />
+          <img src={imgUrl} alt="artist" />
+          <FontAwesomeIcon className="far play" icon={faPlay} />
+          <FontAwesomeIcon className="far circle" icon={faPlayCircle} />
         </Link>
       </AlbumThumbNail>
       <AlbumTextBox>
@@ -18,23 +19,22 @@ function AlbumBox({ imgUrl, title, artist }) {
           <Link to="/AlbumDetail">{title}</Link>
         </div>
         <div className="artist">
-          <Link to="/AlbumDetail">{artist}</Link>
+          <Link to="/AlbumDetail">주간 청취자 {Number(listener).toLocaleString()}명</Link>
         </div>
       </AlbumTextBox>
-    </AlbumContainer>
+    </ArtistContainer>
   );
 }
 
-export default AlbumBox;
+export default ArtistBox;
 
-const AlbumContainer = styled.div`
+const ArtistContainer = styled.div`
   position: relative;
   width: 175px;
   height: 257px;
 `;
 
 const AlbumThumbNail = styled.div`
-  width: 100%;
   height: 205px;
   padding-top: 14px;
 
@@ -48,48 +48,58 @@ const AlbumThumbNail = styled.div`
     width: 175px;
     height: 175px;
     top: 17px;
-    border-radius: 15%;
+    border-radius: 50%;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.4);
-    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .far {
+  .play {
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: 14px;
-    top: 145px;
-    color: #ffffff;
+    font-size: 35px;
+    right: 18px;
+    top: 138px;
+    color: #000000;
 
-    &:hover {
+    &.play:hover {
       color: blue;
       transform: scale(1.2);
+    }
+  }
+
+  .circle {
+    position: absolute;
+    font-size: 55px;
+    right: 8px;
+    top: 127px;
+    color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.4);
+
+    &.circle:hover {
+      color: blue;
+      transform: scale(1.2);
+      border: none;
     }
   }
 `;
 
 const AlbumTextBox = styled.div`
   height: 32px;
+  text-align: center;
 
   .titleOfSong {
-    width: 168px;
+    width: 175px;
     bottom: 35px;
-    margin-left: 7px;
 
     a {
       color: #333333;
       font-size: 15px;
-
-      &:hover {
-        color: blue;
-      }
     }
   }
 
   .artist {
-    width: 162px;
+    width: 175px;
     height: 16px;
-    margin: 5px 0 0 7px;
+    margin-top: 5px;
 
     a {
       font-size: 13px;
